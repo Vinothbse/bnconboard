@@ -5745,7 +5745,7 @@ function create_if_block_1$3(ctx) {
   return {
     c: function c() {
       div0 = element("div");
-      div0.innerHTML = "By connecting a wallet, you agree to PoolTogether&#39;s <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://pooltogether.com/terms\">Terms of Service</a> and acknowledge that you have read and understand the\n        <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://pooltogether.com/protocol-disclaimer\">PoolTogether protocol disclaimer</a>.";
+      // div0.innerHTML = "By connecting a wallet, you agree to PoolTogether&#39;s <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://pooltogether.com/terms\">Terms of Service</a> and acknowledge that you have read and understand the\n        <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://pooltogether.com/protocol-disclaimer\">PoolTogether protocol disclaimer</a>.";
       t5 = space();
       _p = element("p");
       t6 = space();
@@ -8515,8 +8515,10 @@ function getModule$1(name) {
 }
 
 var defaultHeading = 'Select a Wallet';
-var defaultDescription = 'Please select a wallet to connect to PoolTogether:';
-var defaultWalletExplanation = "Wallets are used to send, receive, and store digital assets like Ether. Wallets come in many forms. They are either built into your browser, an extension added to your browser, a piece of hardware plugged into your computer or even an app on your phone. For more information about wallets, see <a style=\"color: #4a90e2; font-size: 0.889rem; font-family: inherit;\" class=\"bn-onboard-clickable\" href=\"https://docs.ethhub.io/using-ethereum/wallets/intro-to-ethereum-wallets/\" target=\"_blank\" rel=\"noopener noreferrer\">this explanation</a>.";
+var defaultDescription = 'Please select a wallet to connect to Crumble:';
+// var defaultWalletExplanation = "Wallets are used to send, receive, and store digital assets like Ether. Wallets come in many forms. They are either built into your browser, an extension added to your browser, a piece of hardware plugged into your computer or even an app on your phone. For more information about wallets, see <a style=\"color: #4a90e2; font-size: 0.889rem; font-family: inherit;\" class=\"bn-onboard-clickable\" href=\"https://docs.ethhub.io/using-ethereum/wallets/intro-to-ethereum-wallets/\" target=\"_blank\" rel=\"noopener noreferrer\">this explanation</a>.";
+var defaultWalletExplanation = "Wallets are used to send, receive, and store digital assets like Ether. Wallets come in many forms. They are either built into your browser, an extension added to your browser, a piece of hardware plugged into your computer or even an app on your phone.";
+
 
 function initializeModules(networkId, walletSelectOptions, walletCheck, isMobile) {
   var wallets = select(walletSelectOptions && walletSelectOptions.wallets, networkId, isMobile);
